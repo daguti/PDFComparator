@@ -1,0 +1,185 @@
+/*     */ package org.apache.fontbox.cff.charset;
+/*     */ 
+/*     */ public class CFFExpertCharset extends CFFCharset
+/*     */ {
+/*  41 */   private static final CFFExpertCharset INSTANCE = new CFFExpertCharset();
+/*     */ 
+/*     */   public static CFFExpertCharset getInstance()
+/*     */   {
+/*  38 */     return INSTANCE;
+/*     */   }
+/*     */ 
+/*     */   static
+/*     */   {
+/*  45 */     INSTANCE.register(1, "space");
+/*  46 */     INSTANCE.register(13, "comma");
+/*  47 */     INSTANCE.register(14, "hyphen");
+/*  48 */     INSTANCE.register(15, "period");
+/*  49 */     INSTANCE.register(27, "colon");
+/*  50 */     INSTANCE.register(28, "semicolon");
+/*  51 */     INSTANCE.register(99, "fraction");
+/*  52 */     INSTANCE.register(109, "fi");
+/*  53 */     INSTANCE.register(110, "fl");
+/*  54 */     INSTANCE.register(150, "onesuperior");
+/*  55 */     INSTANCE.register(155, "onehalf");
+/*  56 */     INSTANCE.register(158, "onequarter");
+/*  57 */     INSTANCE.register(163, "threequarters");
+/*  58 */     INSTANCE.register(164, "twosuperior");
+/*  59 */     INSTANCE.register(169, "threesuperior");
+/*  60 */     INSTANCE.register(229, "exclamsmall");
+/*  61 */     INSTANCE.register(230, "Hungarumlautsmall");
+/*  62 */     INSTANCE.register(231, "dollaroldstyle");
+/*  63 */     INSTANCE.register(232, "dollarsuperior");
+/*  64 */     INSTANCE.register(233, "ampersandsmall");
+/*  65 */     INSTANCE.register(234, "Acutesmall");
+/*  66 */     INSTANCE.register(235, "parenleftsuperior");
+/*  67 */     INSTANCE.register(236, "parenrightsuperior");
+/*  68 */     INSTANCE.register(237, "twodotenleader");
+/*  69 */     INSTANCE.register(238, "onedotenleader");
+/*  70 */     INSTANCE.register(239, "zerooldstyle");
+/*  71 */     INSTANCE.register(240, "oneoldstyle");
+/*  72 */     INSTANCE.register(241, "twooldstyle");
+/*  73 */     INSTANCE.register(242, "threeoldstyle");
+/*  74 */     INSTANCE.register(243, "fouroldstyle");
+/*  75 */     INSTANCE.register(244, "fiveoldstyle");
+/*  76 */     INSTANCE.register(245, "sixoldstyle");
+/*  77 */     INSTANCE.register(246, "sevenoldstyle");
+/*  78 */     INSTANCE.register(247, "eightoldstyle");
+/*  79 */     INSTANCE.register(248, "nineoldstyle");
+/*  80 */     INSTANCE.register(249, "commasuperior");
+/*  81 */     INSTANCE.register(250, "threequartersemdash");
+/*  82 */     INSTANCE.register(251, "periodsuperior");
+/*  83 */     INSTANCE.register(252, "questionsmall");
+/*  84 */     INSTANCE.register(253, "asuperior");
+/*  85 */     INSTANCE.register(254, "bsuperior");
+/*  86 */     INSTANCE.register(255, "centsuperior");
+/*  87 */     INSTANCE.register(256, "dsuperior");
+/*  88 */     INSTANCE.register(257, "esuperior");
+/*  89 */     INSTANCE.register(258, "isuperior");
+/*  90 */     INSTANCE.register(259, "lsuperior");
+/*  91 */     INSTANCE.register(260, "msuperior");
+/*  92 */     INSTANCE.register(261, "nsuperior");
+/*  93 */     INSTANCE.register(262, "osuperior");
+/*  94 */     INSTANCE.register(263, "rsuperior");
+/*  95 */     INSTANCE.register(264, "ssuperior");
+/*  96 */     INSTANCE.register(265, "tsuperior");
+/*  97 */     INSTANCE.register(266, "ff");
+/*  98 */     INSTANCE.register(267, "ffi");
+/*  99 */     INSTANCE.register(268, "ffl");
+/* 100 */     INSTANCE.register(269, "parenleftinferior");
+/* 101 */     INSTANCE.register(270, "parenrightinferior");
+/* 102 */     INSTANCE.register(271, "Circumflexsmall");
+/* 103 */     INSTANCE.register(272, "hyphensuperior");
+/* 104 */     INSTANCE.register(273, "Gravesmall");
+/* 105 */     INSTANCE.register(274, "Asmall");
+/* 106 */     INSTANCE.register(275, "Bsmall");
+/* 107 */     INSTANCE.register(276, "Csmall");
+/* 108 */     INSTANCE.register(277, "Dsmall");
+/* 109 */     INSTANCE.register(278, "Esmall");
+/* 110 */     INSTANCE.register(279, "Fsmall");
+/* 111 */     INSTANCE.register(280, "Gsmall");
+/* 112 */     INSTANCE.register(281, "Hsmall");
+/* 113 */     INSTANCE.register(282, "Ismall");
+/* 114 */     INSTANCE.register(283, "Jsmall");
+/* 115 */     INSTANCE.register(284, "Ksmall");
+/* 116 */     INSTANCE.register(285, "Lsmall");
+/* 117 */     INSTANCE.register(286, "Msmall");
+/* 118 */     INSTANCE.register(287, "Nsmall");
+/* 119 */     INSTANCE.register(288, "Osmall");
+/* 120 */     INSTANCE.register(289, "Psmall");
+/* 121 */     INSTANCE.register(290, "Qsmall");
+/* 122 */     INSTANCE.register(291, "Rsmall");
+/* 123 */     INSTANCE.register(292, "Ssmall");
+/* 124 */     INSTANCE.register(293, "Tsmall");
+/* 125 */     INSTANCE.register(294, "Usmall");
+/* 126 */     INSTANCE.register(295, "Vsmall");
+/* 127 */     INSTANCE.register(296, "Wsmall");
+/* 128 */     INSTANCE.register(297, "Xsmall");
+/* 129 */     INSTANCE.register(298, "Ysmall");
+/* 130 */     INSTANCE.register(299, "Zsmall");
+/* 131 */     INSTANCE.register(300, "colonmonetary");
+/* 132 */     INSTANCE.register(301, "onefitted");
+/* 133 */     INSTANCE.register(302, "rupiah");
+/* 134 */     INSTANCE.register(303, "Tildesmall");
+/* 135 */     INSTANCE.register(304, "exclamdownsmall");
+/* 136 */     INSTANCE.register(305, "centoldstyle");
+/* 137 */     INSTANCE.register(306, "Lslashsmall");
+/* 138 */     INSTANCE.register(307, "Scaronsmall");
+/* 139 */     INSTANCE.register(308, "Zcaronsmall");
+/* 140 */     INSTANCE.register(309, "Dieresissmall");
+/* 141 */     INSTANCE.register(310, "Brevesmall");
+/* 142 */     INSTANCE.register(311, "Caronsmall");
+/* 143 */     INSTANCE.register(312, "Dotaccentsmall");
+/* 144 */     INSTANCE.register(313, "Macronsmall");
+/* 145 */     INSTANCE.register(314, "figuredash");
+/* 146 */     INSTANCE.register(315, "hypheninferior");
+/* 147 */     INSTANCE.register(316, "Ogoneksmall");
+/* 148 */     INSTANCE.register(317, "Ringsmall");
+/* 149 */     INSTANCE.register(318, "Cedillasmall");
+/* 150 */     INSTANCE.register(319, "questiondownsmall");
+/* 151 */     INSTANCE.register(320, "oneeighth");
+/* 152 */     INSTANCE.register(321, "threeeighths");
+/* 153 */     INSTANCE.register(322, "fiveeighths");
+/* 154 */     INSTANCE.register(323, "seveneighths");
+/* 155 */     INSTANCE.register(324, "onethird");
+/* 156 */     INSTANCE.register(325, "twothirds");
+/* 157 */     INSTANCE.register(326, "zerosuperior");
+/* 158 */     INSTANCE.register(327, "foursuperior");
+/* 159 */     INSTANCE.register(328, "fivesuperior");
+/* 160 */     INSTANCE.register(329, "sixsuperior");
+/* 161 */     INSTANCE.register(330, "sevensuperior");
+/* 162 */     INSTANCE.register(331, "eightsuperior");
+/* 163 */     INSTANCE.register(332, "ninesuperior");
+/* 164 */     INSTANCE.register(333, "zeroinferior");
+/* 165 */     INSTANCE.register(334, "oneinferior");
+/* 166 */     INSTANCE.register(335, "twoinferior");
+/* 167 */     INSTANCE.register(336, "threeinferior");
+/* 168 */     INSTANCE.register(337, "fourinferior");
+/* 169 */     INSTANCE.register(338, "fiveinferior");
+/* 170 */     INSTANCE.register(339, "sixinferior");
+/* 171 */     INSTANCE.register(340, "seveninferior");
+/* 172 */     INSTANCE.register(341, "eightinferior");
+/* 173 */     INSTANCE.register(342, "nineinferior");
+/* 174 */     INSTANCE.register(343, "centinferior");
+/* 175 */     INSTANCE.register(344, "dollarinferior");
+/* 176 */     INSTANCE.register(345, "periodinferior");
+/* 177 */     INSTANCE.register(346, "commainferior");
+/* 178 */     INSTANCE.register(347, "Agravesmall");
+/* 179 */     INSTANCE.register(348, "Aacutesmall");
+/* 180 */     INSTANCE.register(349, "Acircumflexsmall");
+/* 181 */     INSTANCE.register(350, "Atildesmall");
+/* 182 */     INSTANCE.register(351, "Adieresissmall");
+/* 183 */     INSTANCE.register(352, "Aringsmall");
+/* 184 */     INSTANCE.register(353, "AEsmall");
+/* 185 */     INSTANCE.register(354, "Ccedillasmall");
+/* 186 */     INSTANCE.register(355, "Egravesmall");
+/* 187 */     INSTANCE.register(356, "Eacutesmall");
+/* 188 */     INSTANCE.register(357, "Ecircumflexsmall");
+/* 189 */     INSTANCE.register(358, "Edieresissmall");
+/* 190 */     INSTANCE.register(359, "Igravesmall");
+/* 191 */     INSTANCE.register(360, "Iacutesmall");
+/* 192 */     INSTANCE.register(361, "Icircumflexsmall");
+/* 193 */     INSTANCE.register(362, "Idieresissmall");
+/* 194 */     INSTANCE.register(363, "Ethsmall");
+/* 195 */     INSTANCE.register(364, "Ntildesmall");
+/* 196 */     INSTANCE.register(365, "Ogravesmall");
+/* 197 */     INSTANCE.register(366, "Oacutesmall");
+/* 198 */     INSTANCE.register(367, "Ocircumflexsmall");
+/* 199 */     INSTANCE.register(368, "Otildesmall");
+/* 200 */     INSTANCE.register(369, "Odieresissmall");
+/* 201 */     INSTANCE.register(370, "OEsmall");
+/* 202 */     INSTANCE.register(371, "Oslashsmall");
+/* 203 */     INSTANCE.register(372, "Ugravesmall");
+/* 204 */     INSTANCE.register(373, "Uacutesmall");
+/* 205 */     INSTANCE.register(374, "Ucircumflexsmall");
+/* 206 */     INSTANCE.register(375, "Udieresissmall");
+/* 207 */     INSTANCE.register(376, "Yacutesmall");
+/* 208 */     INSTANCE.register(377, "Thornsmall");
+/* 209 */     INSTANCE.register(378, "Ydieresissmall");
+/*     */   }
+/*     */ }
+
+/* Location:           C:\Users\ESa10969\Desktop\PDFComparer\
+ * Qualified Name:     org.apache.fontbox.cff.charset.CFFExpertCharset
+ * JD-Core Version:    0.6.2
+ */
